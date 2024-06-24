@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           {/* search bar and watch Now button */}
           <div>
-            <div className='group relative hidden sm:block'>
+            <div className='group goo relative hidden sm:block'>
               <input type="text" placeholder='search' className='w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border-2 border-gray-300 px-3 py-1 focus:outline-none focus:border-[#1447ed] text-black dark:bg-black dark:text-gray-100' />
               <IoMdSearch className='absolute top-1/2 text-lg -translate-y-1/2 right-3 group-hover:text-[#f31a06] text-gray-500' />
             </div>
