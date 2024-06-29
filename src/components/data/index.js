@@ -23,8 +23,8 @@ import both from '../../assets/Both.png'
 export const Menu = [
     {
         id: 1,
-        name: "Home",
-        link: "/#",
+        name: "For You",
+        link: "/#forYou",
     },
     {
         id: 2,

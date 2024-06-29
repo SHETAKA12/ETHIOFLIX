@@ -45,7 +45,7 @@ const Navbar = () => {
             <li key={data.id}>
               <a 
                 // eslint-disable-next-line no-undef
-                onClick={() => data.name === "Home" ? none : alert(`${data.name} loading...`)}
+                onClick={() => data.name === "For You" ? none : alert(`${data.name} loading...`)}
                 className='inline-block px-4 bg-red-300 rounded-full m-4 border-1 hover:bg-white hover:border-red-300 hover:border-1 transition-all duration-150' href={data.link}>{data.name}</a>
             </li>
           ))}
