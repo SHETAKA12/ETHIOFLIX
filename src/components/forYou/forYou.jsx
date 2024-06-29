@@ -17,19 +17,20 @@ const ForYou = () => {
   };
 
   return (
-    <div className='mt-14 mb-12 dark:bg-[#0f0f0f] dark:text-gray-100'>
+    <div id='forYou' className='mt-14 mb-12 dark:bg-[#0f0f0f] dark:text-gray-100'>
       <div className='container'>
         <div className='text-center mb-10 max-w-[600]'>
-          <p className='text-sm text-red-600'>For You</p>
-          <h1 className='text-3xl font-bold'>Movies</h1>
-          <p className='text-xs text-gray-400'>
-            lorem ipsum dolor sit amet consectetur, adispisicing elit, sit asperiores modu sit asperiores modi
-          </p>
+          <p data-aos = "fade-up" className='text-[32px] font-bold text-red-600'>For You</p>
+          <h1 data-aos = "fade-up" className='text-3xl font-bold'>Movies</h1>
+          
         </div>
         <div className='relative'>
           <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 relative transition-all duration-200'>
             {imageList.map((data) => (
               <div
+              onClick={() => alert(`Watching ${data.title} ${data.id}...`)}
+              data-aos = "fade-up"
+              data-aos-delay = {data.aosDelay}
                 key={data.id}
                 className='group transition-all duration-200 hover:scale-105 cursor-pointer hover:border-2 hover:border-blue-600 rounded-md mb-5'
               >

@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero'
 import ForYou from './components/forYou/forYou'
 import AOS from 'aos'
 import {useEffect } from 'react'
+import 'aos/dist/aos.css'
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -13,7 +14,7 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
-  
+
   return (
     <div >
       <Navbar/>
