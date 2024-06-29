@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Images } from '../data';
 import { MdExpandMore } from "react-icons/md";
+import { IoIosStar } from "react-icons/io";
+
 
 const ForYou = () => {
   const [numImages, setNumImages] = useState(5);
@@ -39,7 +41,7 @@ const ForYou = () => {
                 <p>{data.title} {data.id}</p>
                 <p className='text-justify text-sm'>{data.description.slice(0, 20)}</p>
                 <p className='text-sm text-white sm:absolute top-2 bg-black/80 sm:hidden group-hover:block p-2 rounded-md'>
-                  Length: 1:30:12 <br /> Year: 2024
+                  Length: 1:30:12 <br /> Year: 2024 <br /> <IoIosStar className='text-yellow-400 inline'/> 4.5
                 </p>
               </div>
             ))}
